@@ -30,7 +30,7 @@ builder.Services.AddShardingDbContext<ShardingDbContext>()
     }).AddConfig(op =>
     {
         op.ConfigId = "c1";
-        op.AddDefaultDataSource("ds0", "server=127.0.0.1;port=3306;database=db2;userid=root;password=root;");
+        op.AddDefaultDataSource("ds0", "server=127.0.0.1;port=3306;database=db1;userid=root;password=L6yBtV6qNENrwBy7;");
         op.ReplaceTableEnsureManager(sp=>new MySqlTableEnsureManager<ShardingDbContext>());
     }).EnsureConfig();
 var app = builder.Build();
